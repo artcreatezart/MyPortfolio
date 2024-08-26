@@ -1,5 +1,36 @@
+/* Google Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+
+/* Global Variables */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --header-font-family: 'Nanum Brush Script', cursive;
+  --subheader-font-family: 'Caveat Brush', cursive;
+  --body-text-font-family: 'Arial';
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--header-font-family);
+}
+
+h3 {
+  font-family: var(--subheader-font-family);
+}
+
+p {
+  font-family: var(--body-text-font-family);
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
 }
