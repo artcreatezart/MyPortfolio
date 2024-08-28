@@ -91,13 +91,13 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('/img/home-bg.png');
+  background-image: url('/img/home-bg.webp');
   background-position: center;
   background-size: cover;
   .left-home-img-container {
     width: 40%;
     height: 70%;
-    background-image: url('/img/home-character.png');
+    background-image: url('/img/home-img-character.webp');
     background-position: center;
     background-size: cover;
   }
@@ -122,7 +122,7 @@ section {
 .skill-character-img {
   width: 50%;
   height: 400px;
-  background-image: url('/img/skills-character.png');
+  background-image: url('/img/skills-character.webp');
   background-position: center;
   background-size: cover;
 }
