@@ -12,7 +12,7 @@ const Home = () => {
     <>
       {/* START OF HOME SECTION */}
       <section id='homeSection'>
-        <div className='left-home-container'></div>
+        <div className='left-home-img-container'></div>
         <div className='right-home-container'>
           <h1>Abbie Taylor</h1>
           <h3>Graphic Designer - Front End Developer - UX Designer</h3>
