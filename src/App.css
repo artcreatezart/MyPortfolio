@@ -92,6 +92,8 @@ section {
   justify-content: space-between;
   align-items: center;
   background-image: url('/img/home-bg.webp');
+  background-color: rgba(255,255,255,0.7);
+  background-blend-mode: lighten;
   background-position: center;
   background-size: cover;
   .left-home-img-container {
