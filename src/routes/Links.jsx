@@ -1,6 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 // Page/Component imports
-import Home from '../components/pages/Home'
+import Home from '../pages/Home'
 const Links = () => {
   return (
     <Routes>

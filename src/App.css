@@ -62,9 +62,11 @@ nav {
 
   .nav-links-container {
     ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
       li {
-        display: flex;
-        gap: 2rem;
+
         .nav-link {
           color: #000000;
           font-family: var(--subheader-font-family);
@@ -85,23 +87,32 @@ section {
   padding: 0 70px;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/home-bg.webp'); /* Ensure path is correct */
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; /* Make the background image fixed */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 /* Home section styling */
 
 #homeSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url('/img/home-bg.webp');
-  background-color: rgba(255,255,255,0.7);
-  background-blend-mode: lighten;
-  background-position: center;
-  background-size: cover;
   .left-home-img-container {
     width: 40%;
     height: 70%;
     background-image: url('/img/home-img-character.webp');
     background-position: center;
     background-size: cover;
+    border-radius: 5px;
   }
   .right-home-container {
     width: 55%;

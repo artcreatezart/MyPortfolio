@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const Home = () => {
 
   // category select filtering function
@@ -16,11 +17,11 @@ const Home = () => {
         <div className='right-home-container'>
           <h1>Abbie Taylor</h1>
           <h3>Graphic Designer - Front End Developer - UX Designer</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo dicta minus fugiat cupiditate aut, exercitationem quos mollitia perferendis sunt, beatae ab at expedita maiores quasi excepturi unde praesentium? Laboriosam.
-          Asperiores enim qui impedit, ab quae corrupti omnis a totam praesentium! Nisi, pariatur? Velit repellat quos veniam ex non praesentium. Voluptas dolor odit accusamus magni beatae maxime mollitia commodi et?
-          Deserunt laboriosam quas ullam! <br/><br/>Ex alias facere ad ipsa repudiandae voluptatum odio voluptate eum voluptatibus? Maxime dicta amet ab officiis alias rerum odio debitis, beatae, nostrum, optio et impedit magni!
-          Doloremque laudantium quasi illo ea non voluptas, cumque, neque aut labore eius sunt atque ex officia numquam, nam enim. Nam aperiam veniam libero deserunt suscipit excepturi, quibusdam ex laboriosam vitae!
-          Dolores doloribus minima eius eos autem. Inventore temporibus obcaecati expedita reprehenderit dolores. Culpa earum assumenda doloribus harum consequuntur eligendi? Cupiditate et repudiandae dolorum incidunt, maiores explicabo itaque error nemo vero.</p>
+          <p> As a web devleoper and UX designer I love to create and solve. Whether it's designing or coding I feel this itch and excitment that I want to learn more. The most joy, success and pride comes from being proud of what I've created and especially when users are able to use the application with ease and enjoyment. <br/><br/>
+          I enjoy designing clean, simple but effective layout's while also have a love for some different and playful idea's. Whether it's through colour or different ways user's can interact whether it works or not, there is still joy in the trial and error, to be able to test the boundries.<br/><br/>Outside of work I really enjoy creating (sketching, crafts and painting), board games, puzzle games,
+          gaming, snuggling with my pets and watching anime. I love to watch and admire animated shows like anime and cool special effects movies. I am also a big
+          fan of listening to musical’s, and baking. These are some of the small ways to burst out my enegry that
+          bring me joy.</p>
         </div>
       </section>
       {/* END OF HOME SECTION */}
