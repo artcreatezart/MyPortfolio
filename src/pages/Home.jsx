@@ -1,5 +1,176 @@
 import React from 'react'
 
+const portfolioProjects = [
+  {
+      id: 1,
+      name: 'Pokedex App',
+      type: 'Web Development',
+      mockupImage1: '/img/projectArrayImg/pokedexmockup.webp',
+      image2: '',
+      image3: '',
+      image4: '',
+      image5: '',
+      image6: '',
+      date: '2024',
+      credit: '',
+      aboutdescription: 'blah blah blah',
+      processDescription: '',
+      learningDescription: '',
+      github: '',
+      vercel: '',
+      tools: '',
+      hardSkills: '',
+      softSkills: '',
+  },
+  {
+      id: 2,
+      name: 'Newspaper Website',
+      mockupImage1: '/img/projectArrayImg/newsmockup.webp',
+      type: 'Web Development',
+      image2: '',
+      image3: '',
+      image4: '',
+      image5: '',
+      image6: '',
+      date: '2024',
+      credit: '',
+      aboutdescription: 'blah blah blah',
+      processDescription: '',
+      learningDescription: '',
+      github: '',
+      vercel: '',
+      tools: '',
+      hardSkills: '',
+      softSkills: '',
+  },
+  {
+      id: 3,
+      name: 'Lord of the Fries ',
+      mockupImage1: '/img/projectArrayImg/lotfmockup.webp',
+      type: 'Web Development',
+      image2: '',
+      image3: '',
+      image4: '',
+      image5: '',
+      image6: '',
+      date: '2024',
+      credit: '',
+      aboutdescription: 'blah blah blah',
+      processDescription: '',
+      learningDescription: '',
+      github: '',
+      vercel: '',
+      tools: '',
+      hardSkills: '',
+      softSkills: '',
+  },
+  {
+      id: 4,
+      name: 'Five Nights At Freddys Website',
+      mockupImage1: '/img/projectArrayImg/fnafmockup.webp',
+      type: 'Web Development',
+      image2: '',
+      image3: '',
+      image4: '',
+      image5: '',
+      image6: '',
+      date: '2024',
+      credit: 'Abbie (Myself), Kristine and Mere',
+      aboutdescription: 'blah blah blah',
+      processDescription: '',
+      learningDescription: '',
+      github: '',
+      vercel: '',
+      tools: '',
+      hardSkills: '',
+      softSkills: '',
+  },
+  {
+      id: 5,
+      name: 'Accomadation Website',
+      mockupImage1: '/img/projectArrayImg/acommockup.webp',
+      type: 'Web Development',
+      image2: '',
+      image3: '',
+      image4: '',
+      image5: '',
+      image6: '',
+      date: '2024',
+      credit: '',
+      aboutdescription: 'blah blah blah',
+      processDescription: '',
+      learningDescription: '',
+      github: '',
+      vercel: '',
+      tools: '',
+      hardSkills: '',
+      softSkills: '',
+  },
+  {
+      id: 6,
+      name: 'Portfolio App',
+      mockupImage1: '/img/projectArrayImg/portfoliomockup.webp',
+      type: 'Web Development',
+      image2: '',
+      image3: '',
+      image4: '',
+      image5: '',
+      image6: '',
+      date: '2024',
+      credit: 'Abbie (Myself), Kristine and Mere',
+      aboutdescription: 'blah blah blah',
+      processDescription: '',
+      learningDescription: '',
+      github: 'https://github.com/Kasa-27119/formative-3.2-quantum-quokkas',
+      vercel: '',
+      tools: '',
+      hardSkills: '',
+      softSkills: '',
+  },
+  {
+    id: 7,
+    name: 'Sculpture Brouchure',
+    mockupImage1: '/img/projectArrayImg/brochuremockup.webp',
+    type: 'Graphic Design',
+    image2: '',
+    image3: '',
+    image4: '',
+    image5: '',
+    image6: '',
+    date: '2024',
+    credit: '',
+    aboutdescription: 'blah blah blah',
+    processDescription: '',
+    learningDescription: '',
+    github: '',
+    vercel: '',
+    tools: '',
+    hardSkills: '',
+    softSkills: '',
+  },
+  {
+    id: 8,
+    name: 'Adderstone Packaging',
+    mockupImage1: '/img/projectArrayImg/boxmockup.webp',
+    type: 'Graphic Design',
+    image2: '',
+    image3: '',
+    image4: '',
+    image5: '',
+    image6: '',
+    date: '2024',
+    credit: '',
+    aboutdescription: 'blah blah blah',
+    processDescription: '',
+    learningDescription: '',
+    github: '',
+    vercel: '',
+    tools: '',
+    hardSkills: '',
+    softSkills: '',
+  },
+]
+
 
 const Home = () => {
 
@@ -32,14 +203,16 @@ const Home = () => {
           <h1>Projects</h1>
           <div className='top-project-filter-container'>
             <div className='select-filter-container'>
+              <label htmlFor=''>Type:</label>
               <select name='categorySelect' id='categorySelect'>
                 <option value=''>All</option>
-                <option value='graphicDesign'>Graphic Desing</option>
-                <option value='uxDesign'>UX Design</option>
-                <option value='frontendDevelopment'>Front End Development</option>
+                <option value='Graphic Design'>Graphic Design</option>
+                <option value='Ux Design'>UX Design</option>
+                <option value='Web Development'>Front End Development</option>
               </select>
             </div>
             <div className='select-filter-container'>
+              <label htmlFor=''>Year:</label>
               <select name='yearSelect' id='yearSelect'>
                 <option value=''>Any</option>
                 <option value='2024'>2024</option>
@@ -47,9 +220,22 @@ const Home = () => {
               </select>
             </div>
             <button>Clear Filters</button>
+            <div className='project-character-img'/>
           </div>
-          <div id='projectDisplay'/>
-          <div className='project-character-img'/>
+          <div className='horizantal-line'/>
+          <div id='projectDisplay'>
+            {portfolioProjects.map((project) => (
+              <div key={project.id} className="project-card">
+                <img src={project.mockupImage1} alt={`${project.name} mockup`} className='project-card-img'/>
+                <div className='project-card-img-details'>
+                <h2 className='project-card-name'>{project.name}</h2>
+                <p className='project-card-credit'>{project.credit}</p>
+                </div>
+                
+              </div>
+            ))}
+          </div>
+          
         </div>
       </section>
       {/* END OF PROJECT SECTION */}
@@ -57,14 +243,18 @@ const Home = () => {
       {/* START OF SKILL SECTION */}
       <section id='skillSection'>
         <h1>Skills</h1>
-        <div className='hard-skills-container'>
-          <div className='skills-layout-container'></div>
+        <div className='skill-display'>
+          <div className='hard-skills-container'>
+            <div className='skills-layout-container'></div>
+          </div>
+          <div className='line-divider'/>
+          <div className='soft-skills-container'>
+            <div className='skills-layout-container'></div>
+          </div>
+          <div className='skill-character-img'/>
+
         </div>
-        <div className='line-divider'/>
-        <div className='soft-skills-container'>
-          <div className='skills-layout-container'></div>
-        </div>
-        <div className='skill-character-img'/>
+        
         
       </section>
       {/* END OF SKILL SECTION */}

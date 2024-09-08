@@ -19,7 +19,7 @@ const Header = () => {
       <div className='logo-container'>
         <div className='logo-img-container'/>
         <Link 
-                className='nav-link' 
+                className='name-nav-link' 
                 to='#' 
                 onClick={(e) => handleScroll(e, 'homeSection')}
             >
