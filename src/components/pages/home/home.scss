@@ -1,0 +1,34 @@
+
+@import '/src/app.scss';
+
+#homeSection {
+    justify-content: space-between;
+    align-items: center;
+
+    .left-home-img-container {
+      width: 40%;
+      height: 600px;
+      background-image: url('/img/home-img-character.webp');
+      background-position: center;
+      background-size: cover;
+      border-radius: 5px;
+    }
+
+    .right-home-container {
+      width: 55%;
+      height: 70%;
+      h1 {
+        font-size: 6em;
+      }
+      h3 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.2em;
+        line-height: 25px;
+      }
+      
+    }
+
+  }

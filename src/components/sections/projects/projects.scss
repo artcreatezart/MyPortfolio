@@ -1,0 +1,80 @@
+/* Proojects Section Start */
+
+.top-project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0 0 20px 0;
+    padding-top: 100px;
+  }
+  
+  .top-project-filter-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 250px;
+  }
+  
+  .project-character-img {
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-image: url('/img/projects-character.webp');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  
+  }
+  
+  .horizantal-line {
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin: 10px;
+  }
+  
+  #projectDisplay {
+    max-width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px 35px;
+    overflow: auto;
+  }
+  
+  
+  .project-card {
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    position: relative;
+  
+  }
+  
+  .project-card-img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .project-card-img-details {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-card:hover .project-card-img{
+    color: rgba(255, 255, 255, 0.2);
+    object-position: 0%;
+  
+  }
+  
+  .project-card:hover .project-card-img-details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+  }

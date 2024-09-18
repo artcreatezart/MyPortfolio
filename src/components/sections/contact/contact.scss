@@ -1,0 +1,22 @@
+#contactSection {
+    padding: 100px 0 0 70px;
+  }
+  
+  .left-contact-container {
+    width: 50%;
+  }
+  .right-contact-container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .contact-character-img {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 700px;
+    height: 700px;
+    background-image: url('/img/contact-character.webp');
+    background-position: center;
+    background-size: cover;
+  }

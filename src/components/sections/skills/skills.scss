@@ -1,0 +1,38 @@
+#skillSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills-container {
+    max-width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 35px 35px;
+    overflow: auto;
+  }
+  
+  .skills-card {
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    position: relative;
+  }
+  
+  .skills-card-img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .skill-character-img {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background-image: url('/img/skills-character.webp');
+    background-position: center;
+    background-size: cover;
+  }
