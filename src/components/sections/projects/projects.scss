@@ -1,37 +1,82 @@
 /* Proojects Section Start */
+@import '/src/app.scss';
 
 .top-project-container {
     display: flex;
     flex-direction: column;
     gap: 0 0 20px 0;
-    padding-top: 100px;
-  }
-  
-  .top-project-filter-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    height: 250px;
-  }
-  
-  .project-character-img {
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    background-image: url('/img/projects-character.webp');
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-  
-  }
-  
-  .horizantal-line {
-    width: 100%;
-    height: 5px;
-    background-color: #000000;
-    margin: 10px;
+    padding-top: 120px;
+
+    .top-project-filter-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .left-top-project-filter-container {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        .bottom-project-filter-container {
+          display: flex;
+          align-items: center;
+          padding-top: 20px;
+          gap: 5rem;
+
+          .select-filter-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            label {
+              font-family: $subheader-font-family;
+              font-size: 1.5em;
+              letter-spacing: 1px;
+            }
+            select {
+              padding: 10px;
+              border: solid $accent-color 1px;
+              border-radius: 10px;
+              font-family: $body-text-font-family;
+              text-transform: uppercase;
+              font-size: 1em;
+              box-shadow: inset 6px 6px 4px #ededed,
+            inset -6px -6px 4px #ffffff;
+            }
+          }
+
+          .clear-button {
+            padding: 15px;
+            border-radius: 10px;
+            font-family: $body-text-font-family;
+            text-transform: uppercase;
+            background-color: #f679922f;
+            box-shadow:  6px 6px 12px #ecdfdf,
+             -6px -6px 12px #f7f7f7;
+
+          }
+
+          .clear-button:hover {
+            opacity: 80%;
+            background-color: $accent-color;
+            box-shadow: inset 8px 8px 16px $accent-color,
+            inset -8px -8px 16px $accent-color-hover;
+            color: $secondary-color;
+          }
+        
+        }
+      }
+      
+      .project-character-img {
+        width: 150px;
+        height: 150px;
+        background-image: url('/img/projects-character.webp');
+        background-position: center;
+        background-size: cover;
+
+    
+      }
+      
+    }
+
   }
   
   #projectDisplay {
@@ -40,41 +85,78 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 35px 35px;
-    overflow: auto;
+
+    .project-card {
+      border-radius: 5px;
+      position: relative;
+      .project-card-img {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        background-color: $secondary-color;
+        transition: ease 0.5s;
+      }
+      .project-card-img-details {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;   
+        top: 0;               
+        left: 0;              
+        width: 100%;          
+        height: 100%;         
+        background-color: #7d404eb0;
+        border-radius: 5px;
+        transition: ease 0.5s;
+        h2 {
+          font-family: $subheader-font-family;
+          font-size: 1.8em;
+          letter-spacing: 2px;
+          color: $secondary-color;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .see-more-button {
+          padding: 15px;
+          text-transform: uppercase;
+            background-color: #f679922f;
+            box-shadow:  6px 6px 12px #ecdfdf,
+             -6px -6px 12px #f7f7f7;
+             border-radius: 10px;
+             color: $secondary-color;
+        }
+        .see-more-button:hover {
+          opacity: 80%;
+            background-color: $accent-color;
+            box-shadow: inset 8px 8px 16px $accent-color,
+            inset -8px -8px 16px $accent-color-hover;
+            color: $secondary-color;
+        }
+        
+      }
+    }
+    .project-card:hover .project-card-img{
+      object-position: 0%;
+      background-color: $secondary-color;
+      box-shadow:  13px 13px 23px #f4789126,
+      -13px -13px 23px #ff829b33;
+      scale: 1.1;
+      transition: ease 0.5s;
+    }
+    
+    .project-card:hover .project-card-img-details {
+      display: flex;
+      scale: 1.1;
+      transition: ease 0.5s;
+      cursor: pointer;
+    }
+
   }
   
   
-  .project-card {
-    border-radius: 5px;
-    background-color: var(--secondary-color);
-    position: relative;
   
-  }
   
-  .project-card-img {
-    width: 100%;
-    border-radius: 5px;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-  }
   
-  .project-card-img-details {
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .project-card:hover .project-card-img{
-    color: rgba(255, 255, 255, 0.2);
-    object-position: 0%;
-  
-  }
-  
-  .project-card:hover .project-card-img-details {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    left: 25%;
-  }

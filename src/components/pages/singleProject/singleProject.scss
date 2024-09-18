@@ -1,0 +1,160 @@
+@import '/src/app.scss';
+
+#singleProjectSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.arrow {
+    margin-top: 120px;
+    font-size: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: $body-text-font-family;
+    text-transform: uppercase;
+    background-color: #f679922f;
+    box-shadow:  6px 6px 12px #ecdfdf,
+    -6px -6px 12px #f7f7f7;
+}
+.arrow:hover {
+    opacity: 80%;
+    background-color: $accent-color;
+    box-shadow: inset 8px 8px 16px $accent-color,
+    inset -8px -8px 16px $accent-color-hover;
+    color: $secondary-color;
+    cursor: pointer;
+}
+.single-project-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 2em;
+     
+    .img-grid {
+            width: 50%;
+            max-height: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            .grid-img-1 {
+                grid-area: 1 / 1 / 2 / 3;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+            }
+            .grid-img-2 {
+                grid-area: 1 / 3 / 2 / 4;
+                background-color: pink;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+            }
+            .grid-img-3 {
+                grid-area: 2 / 1 / 4 / 2;
+                background-color: pink;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+            }
+            .grid-img-4 {
+                grid-area: 2 / 2 / 3 / 4;
+                background-color: pink;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+            }
+            .grid-img-5 {
+                grid-area: 3 / 2 / 4 / 3;
+                background-color: pink;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+            }
+            .grid-img-6 {
+                grid-area: 3 / 3 / 4 / 4;
+                background-color: pink;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 5px;
+            }
+        }
+    .right-project-container {
+        width: 50%;
+        h3 {
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-family: $header-font-family;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h4 {
+            font-family: $body-text-font-family;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: 200;
+        }
+        .contribution {
+            margin-bottom: 5px;
+            font-family: $body-text-font-family;
+        }
+        .description {
+            margin-bottom: 10px;
+        }
+        .view-text {
+            font-family: $subheader-font-family;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        .project-icon-container {
+            display: flex;
+            gap: 20px;
+
+            .project-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 3em;
+                margin: 0px 20px 20px 0px;
+                gap: 20px;
+                padding: 15px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                background-color: #f679922f;
+                box-shadow:  6px 6px 12px #ecdfdf,
+                -6px -6px 12px #f7f7f7;
+                z-index: 20;
+                color: $primary-color;
+            }
+            .project-icon:hover {
+                opacity: 80%;
+              background-color: $accent-color;
+              box-shadow: inset 8px 8px 16px $accent-color,
+              inset -8px -8px 16px $accent-color-hover;
+              color: $secondary-color;
+              cursor: pointer;
+            }
+        }
+    }
+}

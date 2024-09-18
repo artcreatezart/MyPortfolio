@@ -1,22 +1,126 @@
+@import '/src/app.scss';
+
 #contactSection {
-    padding: 100px 0 0 70px;
+    padding: 120px 0 0 70px;
+
+    .left-contact-container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      h6 {
+        font-family: $body-text-font-family;
+        font-size: 1.2em;
+        font-weight: 200;
+        margin-bottom: 20px;
+      }
+      .sectioned-contact-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        .contact-container {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 4.2em;
+          font-family: $body-text-font-family;
+          letter-spacing: 2px;
+
+          h5 {
+            font-size: 0.3em;
+            font-weight: 100;
+          }
+          .contact-title {
+            text-transform: uppercase;
+            font-weight: 200;
+          }
+          
+          
+        }
+      
+        .contact-social-container {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          font-size: 4em;
+          font-family: $body-text-font-family;
+          letter-spacing: 2px;
+          h4 {
+            font-size: 0.5em;
+            font-family: $subheader-font-family;
+          }
+          .social-container {
+            display: flex;
+            gap: 50px;
+            .social-contact-container {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 20px 20px 20px 0;
+              gap: 20px;
+              padding: 15px;
+              border-radius: 10px;
+              font-family: $body-text-font-family;
+              text-transform: uppercase;
+              background-color: #f679922f;
+              box-shadow:  6px 6px 12px #ecdfdf,
+              -6px -6px 12px #f7f7f7;
+              z-index: 20;
+              text-decoration: none;
+              color: $primary-color;
+              h5 {
+                font-size: 0.3em;
+                font-weight: 100;
+              }
+            }
+            .social-contact-container:hover {
+              opacity: 80%;
+              background-color: $accent-color;
+              box-shadow: inset 8px 8px 16px $accent-color,
+              inset -8px -8px 16px $accent-color-hover;
+              color: $secondary-color;
+              cursor: pointer;
+            }
+          }
+        }
+        .logo-contact {
+          display: flex;
+          gap: 20px;
+          .logo-img-contact {
+            width: 30%;
+            height: 200px;
+            background-image: url('/img/art-logo.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 50px;
+          }
+          h4 {
+            font-family: $body-text-font-family;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: 200;
+            color: $accent-color;
+          }
+        }
+      }
+    }
+    .right-contact-container {
+      position: relative;
+      width: 50%;
+      .contact-character-img {
+        position: absolute;
+        right: 0;
+        top: 20px;
+        width: 700px;
+        height: 700px;
+        background-image: url('/img/contact-character.webp');
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    
+    
   }
   
-  .left-contact-container {
-    width: 50%;
-  }
-  .right-contact-container {
-    position: relative;
-    width: 50%;
-  }
   
-  .contact-character-img {
-    position: absolute;
-    right: 0;
-    top: 20px;
-    width: 700px;
-    height: 700px;
-    background-image: url('/img/contact-character.webp');
-    background-position: center;
-    background-size: cover;
-  }
