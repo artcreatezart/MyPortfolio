@@ -48,21 +48,23 @@ const SingleProject = () => {
           <p className='contribution'>{project.contribution}</p>
           <p className='description'>{project.aboutdescription}</p>
           <p className='description'>{project.processDescription}</p>
+          <p className='description'>Main Hard Skills Used: {project.hardSkills}</p>
+          <p className='description'>Soft Hard Skills Used: {project.softSkills}</p>
           <h4 className='view-text'>View On Github and Vercel!</h4>
           <div className='project-icon-container'>
             <div className=''>
               
             </div>
             <a className='project-icon'
-                href={project.vercel}
-                target='_blank'>
-                  <IoLogoVercel/>
-                </a>
-                <a className='project-icon'
                 href={project.github}
                 target='_blank'
                 >
                   <FaGithub/>
+                </a>
+            <a className='project-icon'
+                href={project.vercel}
+                target='_blank'>
+                  <IoLogoVercel/>
                 </a>
           </div>
 
