@@ -52,9 +52,6 @@ const SingleProject = () => {
           <p className='description'>Soft Hard Skills Used: {project.softSkills}</p>
           <h4 className='view-text'>View On Github and Vercel!</h4>
           <div className='project-icon-container'>
-            <div className=''>
-              
-            </div>
             <a className='project-icon'
                 href={project.github}
                 target='_blank'
@@ -67,7 +64,7 @@ const SingleProject = () => {
                   <IoLogoVercel/>
                 </a>
           </div>
-
+          <div className='single-project-character-img-container'></div>
         </div>
       
     </div>
