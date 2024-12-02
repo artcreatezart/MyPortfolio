@@ -58,6 +58,20 @@ const SingleProject = () => {
                 >
                   <FaGithub/>
                 </a>
+                <a className='project-icon'
+                href={project.githubFrontend}
+                target='_blank'
+                >
+                  <FaGithub/>
+                  <p>Frontend</p>
+                </a>
+                <a className='project-icon'
+                href={project.githubBackend}
+                target='_blank'
+                >
+                  <FaGithub/>
+                  <p>Backend</p>
+                </a>
             <a className='project-icon'
                 href={project.vercel}
                 target='_blank'>
