@@ -76,6 +76,7 @@ const SingleProject = () => {
                 href={project.vercel}
                 target='_blank'>
                   <IoLogoVercel/>
+                  Live Website
                 </a>
           </div>
           <div className='single-project-character-img-container'></div>
