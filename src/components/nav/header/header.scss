@@ -13,6 +13,39 @@ nav {
     z-index: 10;
     box-shadow:  5px 5px 21px #f5f5f5,
     -5px -5px 21px #ffffff;
+    z-index: 100;
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+      top: 24px;
+      right: 35px;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 20px;
+      width: 25px;
+      z-index: 100;
+      transition: transform 0.3s ease;
+
+      .bar {
+        width: 100%;
+        height: 3px;
+        background-color: rgb(0, 0, 0);
+        transition: 0.3s;
+      }
+
+      .bar1.toggle {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      .bar2.toggle {
+        opacity: 0;
+      }
+
+      .bar3.toggle {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    }
 
     .logo-container {
       display: flex;
@@ -77,3 +110,55 @@ nav {
   
   
   /* Header component styling End */
+
+  @media (max-width: 800px) {
+    .nav-links-container {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-200%);
+      overflow-y: auto;
+      gap: 0;
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        
+        li {
+          .nav-link {
+            color: #000000;
+            font-family: $subheader-font-family;
+            font-size: 1.5em;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border: 0;
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
+    
+    .nav-links-container .menu-open-background {
+      background-color: black; 
+      padding: 20rem 0 10rem 0;
+    }
+  
+    .menu-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+
+    }
+  
+    .menu-icon {
+      display: flex;
+    }
+    
+  }

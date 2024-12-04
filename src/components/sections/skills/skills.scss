@@ -50,3 +50,23 @@
     background-position: center;
     background-size: cover;
   }
+
+
+@media (max-width: 1100px) {
+
+  .skill-character-img {
+    position: relative;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background-image: url('/img/skills-character.webp');
+    background-position: center;
+    background-size: cover;
+  }
+
+}
+
+@media (max-width: 800px) {
+   
+
+}
