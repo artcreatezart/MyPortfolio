@@ -3,6 +3,7 @@ import '../contact/contact.scss'
 import { MdOutlineEmail } from "react-icons/md";
 import { FaInstagram, FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
+import ContactForm from './ContactForm';
 
 const Contact = () => {
   return (
@@ -17,7 +18,7 @@ const Contact = () => {
                 <h5 className='contact-title'>Email:</h5>
                 <h5>artdesignswork@hotmail.com</h5>
               </div>
-              
+              <ContactForm/>
             </div>
 
             
