@@ -55,12 +55,11 @@
               display: flex;
               flex-direction: column;
               align-items: center;
-              margin: 20px 20px 20px 0;
-              gap: 20px;
+              margin: 20px 20px 50px 0;
+              gap: 10px;
               padding: 15px;
               border-radius: 10px;
               font-family: $body-text-font-family;
-              text-transform: uppercase;
               background-color: #f679922f;
               box-shadow:  6px 6px 12px #ecdfdf,
               -6px -6px 12px #f7f7f7;
@@ -71,6 +70,9 @@
               h5 {
                 font-size: 0.3em;
                 font-weight: 100;
+              }
+              .social-defintion {
+                font-size: 0.8rem;
               }
             }
             .social-contact-container:hover {
@@ -99,7 +101,6 @@
           h4 {
             font-family: $body-text-font-family;
             font-size: 2em;
-            text-transform: uppercase;
             font-weight: 200;
             color: $accent-color;
           }

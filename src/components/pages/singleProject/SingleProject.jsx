@@ -43,11 +43,15 @@ const SingleProject = () => {
         <div className='right-project-container'>
           <h1>{project.name}</h1>
           <h3>{project.credit}</h3>
-          <h2>{project.type}</h2>
+          <h2>{Array.isArray(project.type) ? project.type.join(" - ") : project.type}</h2>
           <h4>Tools: {project.tools}</h4>
           <p className='contribution'>{project.contribution}</p>
           <p className='description'>{project.aboutdescription}</p>
           <p className='description'>{project.processDescription}</p>
+          {project.disclaimer ? (
+
+              <p className='description disclaimer' href={project.disclaimer} target='_blank'>Disclaimer: {project.disclaimer}</p>
+                ) : null}
           <p className='description'>Main Hard Skills Used: {project.hardSkills}</p>
           <p className='description'>Soft Hard Skills Used: {project.softSkills}</p>
           <h4 className='view-text'>View On Github and Vercel!</h4>
@@ -57,25 +61,25 @@ const SingleProject = () => {
                 target='_blank'
                 >
                   <FaGithub/>
+                  <p>Github</p>
                 </a>
-                <a className='project-icon'
-                href={project.githubFrontend}
-                target='_blank'
-                >
-                  <FaGithub/>
-                  <p>Frontend</p>
-                </a>
-                <a className='project-icon'
-                href={project.githubBackend}
-                target='_blank'
-                >
-                  <FaGithub/>
-                  <p>Backend</p>
-                </a>
+                {project.githubFrontend ? (
+                  <a className='project-icon' href={project.githubFrontend} target='_blank'>
+                    <FaGithub />
+                    <p>Frontend</p>
+                  </a>
+                ) : null}
+                {project.githubBackend ? (
+                  <a className='project-icon' href={project.githubBackend} target='_blank'>
+                    <FaGithub />
+                    <p>Backend</p>
+                  </a>
+                ) : null}
             <a className='project-icon'
                 href={project.vercel}
                 target='_blank'>
                   <IoLogoVercel/>
+                  <p>Live Website</p>
                 </a>
           </div>
           <div className='single-project-character-img-container'></div>

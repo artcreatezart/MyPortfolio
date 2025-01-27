@@ -23,6 +23,10 @@
     box-shadow:  6px 6px 12px #ecdfdf,
     -6px -6px 12px #f7f7f7;
 }
+.disclaimer {
+    font-size: 0.8rem;
+    opacity: 70%;
+}
 .arrow:hover {
     opacity: 80%;
     background-color: $accent-color;
