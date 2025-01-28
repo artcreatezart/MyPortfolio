@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       Created by Abbie Taylor<br/>
-      *Responsiveness In Production*  *All projects are done through study and for educational Purposes only*
+      *All projects are done through study and for educational Purposes only*
     </footer>
   )
 }
