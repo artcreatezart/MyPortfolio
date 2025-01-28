@@ -10,9 +10,12 @@ const App = () => {
 
   return (
     <HashRouter>
-    <Header/>
-    <Links/>
-    <Footer/>
+      <div id='rootContainer'>
+      <Header/>
+      <Links/>
+      <Footer/>
+      </div>
+      
     </HashRouter>
   )
 }
