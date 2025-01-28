@@ -22,6 +22,7 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+
         emailjs 
             .send(
                 SERVICE_ID,
@@ -43,49 +44,55 @@ const ContactForm = () => {
   return (
     <div>
         <Toaster position='top-center'/>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='contact-form'>
 
-        <label>Name:
+        <div className='contact-form-sections'>
+            <label>Name: </label>
             <input
-                type='text'
-                name='name'
-                value={formData.name}
-                onChange={handleChange}
-                required
-            />
-        </label>
-
-        <label>Contact Email:
+                    type='text'
+                    name='name'
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                />
+        </div>
+        
+        <div className='contact-form-sections'>
+            <label>Contact Email:</label>
             <input
-                type='text'
-                name='email'
-                value={formData.email}
-                onChange={handleChange}
-                required
-            />
-        </label>
+                    type='text'
+                    name='email'
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
 
-        <label>Subject:
+        </div>
+        
+        <div className='contact-form-sections'>
+            <label>Subject: </label>
             <input
-                type='text'
-                name='subject'
-                value={formData.subject}
-                onChange={handleChange}
-                required
-            />
-        </label>
+                    type='text'
+                    name='subject'
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                />
+        </div>
 
-        <label>Message:
+        <div className='contact-form-sections'>
+            <label>Message:</label>
             <textarea 
-                name='message'
-                value={formData.message}
-                onChange={handleChange}
-                required >
+                    name='message'
+                    value={formData.message}
+                    onChange={handleChange}
+                    required >
 
-            </textarea>
-        </label>
+                </textarea>
+        </div>
+       
 
-        <button type='submit'>Send a Message</button>
+        <button type='submit' className='send-email'>Send a Message</button>
 
       </form>
     </div>
