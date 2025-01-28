@@ -82,6 +82,7 @@ const SingleProject = () => {
                   <p>Live Website</p>
                 </a>
           </div>
+          <p>*This project was made for educational purposes only.</p>
           <div className='single-project-character-img-container'/>
         </div>
         
