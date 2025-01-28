@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         padding-top: 20px;
-        gap: 5rem;
+        gap: 3rem;
 
         .select-filter-container {
           display: flex;
@@ -32,14 +32,15 @@
             letter-spacing: 1px;
           }
           select {
-            padding: 10px;
-            border: solid $accent-color 1px;
-            border-radius: 10px;
+            padding: 12px;
+            font-size: 1rem;
             font-family: $body-text-font-family;
-            text-transform: uppercase;
-            font-size: 1em;
-            box-shadow: inset 6px 6px 4px #ededed,
-          inset -6px -6px 4px #ffffff;
+            border: 1px solid #ecdfdf7d ;
+            background-color: #ecdfdf7d;
+            border-radius: 10px;
+    
+            box-shadow:  inset 6px 6px 12px #ecdfdf,
+            inset -6px -6px 12px #f7f7f7;
           }
         }
 
@@ -122,7 +123,7 @@
       .see-more-button {
         padding: 15px;
         text-transform: uppercase;
-          background-color: #f679922f;
+          background-color: #9f79f62f;
           box-shadow:  6px 6px 12px #ecdfdf,
             -6px -6px 12px #f7f7f7;
             border-radius: 10px;
@@ -141,8 +142,8 @@
   .project-card:hover .project-card-img{
     object-position: 0%;
     background-color: $secondary-color;
-    box-shadow:  13px 13px 23px #f4789126,
-    -13px -13px 23px #ff829b33;
+    box-shadow:  13px 13px 23px #78a1f426,
+    -13px -13px 23px #828fff33;
     scale: 1.1;
     transition: ease 0.5s;
   }

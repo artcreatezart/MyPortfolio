@@ -82,8 +82,9 @@ const SingleProject = () => {
                   <p>Live Website</p>
                 </a>
           </div>
-          <div className='single-project-character-img-container'></div>
+          <div className='single-project-character-img-container'/>
         </div>
+        
       
     </div>
 

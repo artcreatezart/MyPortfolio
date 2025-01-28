@@ -22,7 +22,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        font-size: 4.2em;
+        font-size: 3em;
         font-family: $body-text-font-family;
         letter-spacing: 2px;
 
@@ -142,7 +142,7 @@
     }
     input, textarea {
       padding: 0.5rem;
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-family: $body-text-font-family;
       border: 1px solid #ecdfdf7d ;
       background-color: #ecdfdf7d;

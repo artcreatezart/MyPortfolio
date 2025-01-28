@@ -88,7 +88,7 @@ const Skills = () => {
   return (
     <section id='skillSection'>
         <h1>Skills</h1>
-        <h2>Hard Skills</h2>
+        <h2>Key Hard Skills</h2>
         <div className='skills-container'>
             {hardSkills.map((hardSkill) => (
             <div key={hardSkill.id} className="skills-card">
