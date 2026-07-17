@@ -5,6 +5,7 @@
   align-items: center;
   min-height: 80vh; /* Ensure the section takes enough vertical space */
   padding: 10rem 3rem; 
+  border-bottom: 4px dotted #de94d2a5; /* Optional: Add a bottom border for separation */
 
   .left-home-img-container {
     width: 40%;
@@ -20,7 +21,7 @@
     width: 55%;
     height: auto; 
     h1 {
-      font-size: 6em;
+      font-size: 10em;
     }
     h3 {
       font-size: 2em;
