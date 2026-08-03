@@ -71,6 +71,10 @@ a {
   #topProjectSection {
     min-height: 100vh;
   }
+  #topProjectSection h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
   #topProjectSection .projects-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;

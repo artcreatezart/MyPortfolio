@@ -125,6 +125,11 @@ nav {
 
   @media (max-width: 800px) {
     nav {
+      .logo-container {
+      .name-nav-link {
+        display: none;
+      }
+    }
       .nav-links-container {
       display: flex;
       flex-direction: column;
@@ -139,6 +144,7 @@ nav {
       overflow-y: auto;
       gap: 0;
       transition: transform 0.3s ease;
+      
 
       ul {
         display: flex;

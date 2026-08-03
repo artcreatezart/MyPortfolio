@@ -78,9 +78,9 @@ export const portfolioProjects = [
         image6: '/img/projectArrayImg/fnaf6.png',
         date: '2023',
         credit: '',
-        aboutdescription: 'This was one of the first full websites I coded. This website promoting what was a upcoming film Five Nights At Freddys allows users to checkout an overview of the film, watch a trailer from the site, learn more about the animatronics, checkout film posters by clicking on cameras, and reading about what the film is based off and its origin. For this project one thing i looked into was cursor trends and i thought it would be fun to try creating a dynamic cursor. So this website deatures a flashlight cursor that allows you to interact and discover elements throughout the website.',
-        processDescription: 'I started off doing thorough research of SWOT analysis, cursor trends, moodboard, style tile, and user testing. After anyalising pre-production and making the appropriate needed changes and considerations. I started coding, first off focusing getting all the content and basic needs and linking into the html file. Then editing layout and style of those elements in css before getting the dynamic cursor to work from Javascript. This was my first time experiencing Javascript it wasnt needed for this project but i am glad i got to check it out when i did. ',
-        disclaimer: 'I am currently working on this project to improve the design and functionailty using new skills  have learnt. At this moment i am working on trying to make aspects like speaker and task list activities to function.',
+        aboutdescription: 'This was one of the first full websites I coded, created to promote the upcoming Five Nights at Freddy’s film. The site allows users to explore the film through trailers, character information, posters and an interactive camera gallery.',
+        processDescription: 'I began with research including SWOT analysis, moodboards, style tiles and user testing before developing the site. I focused on creating an engaging experience through interactive elements, including a flashlight-style cursor. ',
+        disclaimer: '',
         github: 'https://github.com/artcreatezart/Five-Nights-at-Freddys-Film-Website---Project',
         vercel: 'https://five-nights-at-freddys-film-website-project.vercel.app/',
         tools: 'Figma - Indesign - VS Code',
@@ -248,8 +248,8 @@ export const portfolioProjects = [
     //   processDescription: 'For this packaging design, I researched all about the typography, graphic, colour, packaging/structural elements from the fictional world aswell as the modern world. I also looked into how resources would be collected ethically from this fictional world and how material are processed and used in the final packaging to reflect if theyre would be any long term negative affects on the enviroment. After doing all the research, I looked into wireframes, and designs of not only the graphics but also the strucutral side of the packaging. Alot of testing, feedback analysing, adjustments and developments lead to the end success of this product. I also was really excited to be able to incoporate alot of hand crafted elements to this packaging as this fictional world was based with magic and alot of hand crafted tools I really wanted to be able to show that throught this design. So i created a stamp the shop would use to brand their logo onto the final packaging, a handwritten note from the forager who gathered the stone and details about that specific stone for the product. Aswell as a sewn strip of fabric to wrap the necklace and a sewn pillow of sort for the necklace to sit in the box.',
     //   github: 'https://github.com/artcreatezart',
     //   vercel: 'https://vercel.com/abbies-projects-93142625',
-    //   tools: 'Sewing Machine - Calligraphy Pen',
-    //   hardSkills: 'Photoshop - Indesign - Sewing - Calligraphy',
+    //   tools: '',
+    //   hardSkills: 'Procreate - SquareSpace',
     //   softSkills: 'Creativity - Time Management',
     // }
 

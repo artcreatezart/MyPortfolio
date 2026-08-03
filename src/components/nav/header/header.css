@@ -103,6 +103,9 @@ nav .nav-links-container ul li .logo-img-container {
 
 /* Header component styling End */
 @media (max-width: 800px) {
+  nav .logo-container .name-nav-link {
+    display: none;
+  }
   nav .nav-links-container {
     display: flex;
     flex-direction: column;

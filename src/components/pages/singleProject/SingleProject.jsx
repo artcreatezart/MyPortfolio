@@ -1,8 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../singleProject/singleProject.scss'
 import { useParams, useNavigate } from 'react-router-dom';
 import { portfolioProjects } from '../../pages/moreProjects/MoreProjects'
-import { ArrowLeft } from 'react-bootstrap-icons'
+import { ArrowLeft, ArrowRight } from 'react-bootstrap-icons'
 import { FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 
@@ -18,6 +18,28 @@ const SingleProject = () => {
   const {id} = useParams();
 
   const project = portfolioProjects.find(p => p.id === parseInt(id));
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const images = [
+    project.mockupImage1,
+    project.image2,
+    project.image3,
+    project.image4,
+    project.image5,
+    project.image6
+  ].filter(Boolean);
+
+  const nextImage = () => {
+    setCurrentImage((current) =>
+      current === images.length - 1 ? 0 : current + 1
+      );
+    };
+
+  const previousImage = () => {
+    setCurrentImage((current) =>
+    current === 0 ? images.length - 1 : current - 1
+    );
+  };
 
   if (!project) {
     return <h2>Project not found</h2>;
@@ -32,14 +54,40 @@ const SingleProject = () => {
             </button>
 
       <div className='single-project-container'>
-      <div className='img-grid'>
-          <img className='grid-img-1' src={project.mockupImage1}/>
-          <img className='grid-img-2' src={project.image2}/>
-          <img className='grid-img-3' src={project.image3}/>
-          <img className='grid-img-4' src={project.image4}/>
-          <img className='grid-img-5' src={project.image5}/>
-          <img className='grid-img-6' src={project.image6}/>
-        </div>
+      <div className='project-carousel'>
+
+        <img
+          src={images[currentImage]}
+          alt={`${project.name} ${currentImage + 1}`}
+          className='carousel-img'
+        />
+
+        {images.length > 1 && (
+          <div className='carousel-buttons'>
+          
+            <button
+              className='carousel-button carousel-left'
+              onClick={previousImage}
+            >
+              <ArrowLeft />
+            </button>
+
+            <div className='carousel-counter'>
+              {currentImage + 1} / {images.length}
+            </div>
+
+            <button
+              className='carousel-button carousel-right'
+              onClick={nextImage}
+            >
+              <ArrowRight />
+            </button>
+
+            
+          </div>
+        )}
+
+</div>
         <div className='right-project-container'>
           <h1>{project.name}</h1>
           <h3>{project.credit}</h3>
@@ -52,8 +100,7 @@ const SingleProject = () => {
 
               <p className='description disclaimer' href={project.disclaimer} target='_blank'>Disclaimer: {project.disclaimer}</p>
                 ) : null}
-          <p className='description'>Main Hard Skills Used: {project.hardSkills}</p>
-          <p className='description'>Soft Hard Skills Used: {project.softSkills}</p>
+          <p className='description'>SKILLS: {project.hardSkills}  |  {project.softSkills}</p>
           <div className='bottom-container'>
             <div className='github-link-container'>
               <h4 className='view-text'>View On Github and Vercel!</h4>
@@ -84,7 +131,7 @@ const SingleProject = () => {
                   <p>Live Website</p>
                 </a>
               </div>
-              <p>*This project was made for educational purposes only.</p>
+              <p className='disclaimer-text'>*This project was made for educational purposes only.</p>
           
             </div>
               <div className='single-project-character-img-container'/>
