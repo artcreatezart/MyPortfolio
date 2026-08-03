@@ -92,7 +92,7 @@ const ContactForm = () => {
         </div>
        
 
-        <button type='submit' className='send-email'>Send a Message</button>
+        <button type='submit' className='send-email'>Submit Message</button>
 
       </form>
     </div>

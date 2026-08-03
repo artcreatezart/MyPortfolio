@@ -1,7 +1,12 @@
-@import '/src/app.scss';
+@use '../../../variables' as *;
 
 #contactSection {
   padding: 120px 0 0 70px;
+   background-image: url('/img/pattern-background.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
   .left-contact-container {
     width: 50%;
@@ -50,72 +55,87 @@
         }
         .social-container {
           display: flex;
-          gap: 50px;
+          gap: 2rem;
           .social-contact-container {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 20px 50px 0;
-            gap: 10px;
-            padding: 15px;
-            border-radius: 10px;
-            font-family: $body-text-font-family;
-            background-color: #f679922f;
-            box-shadow:  6px 6px 12px #ecdfdf,
-            -6px -6px 12px #f7f7f7;
-            z-index: 20;
-            text-decoration: none;
-            color: $primary-color;
-            backdrop-filter: blur(10px);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 8rem;
+                width: 10rem;
+                margin: 0px 20px 50px 0px;
+                gap: 0.5rem;
+                padding: 15px;
+                
+                border-radius: 8px;
+                cursor: pointer;
+                color: $primary-color;
+                text-decoration: none;
+                 transition:
+                background-color 0.3s ease-in-out,
+                color 0.3s ease-in-out;
+                border: 1px solid #fdfcfc60;
+
+                background: rgba(255, 255, 255, 0.35);
+                border: 1px solid #fdfcfc60;
+
+                backdrop-filter: blur(14px);
+                -webkit-backdrop-filter: blur(14px);
+
+                box-shadow: 0 8px 30px rgba(100, 70,    60, 0.2);
             h5 {
-              font-size: 0.3em;
+              font-size: 0.25em;
               font-weight: 100;
             }
+
             .social-defintion {
               font-size: 0.8rem;
             }
           }
           .social-contact-container:hover {
-            opacity: 80%;
-            background-color: $accent-color;
-            box-shadow: inset 8px 8px 16px $accent-color,
-            inset -8px -8px 16px $accent-color-hover;
-            color: $secondary-color;
-            cursor: pointer;
-            backdrop-filter: blur(10px);
+             color: #ffffff;
+          background-color: #7b3b3bba;
+
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+
+          box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+          transform: translateY(-10px) rotate   (-1deg);
           }
         }
       }
-      .logo-contact {
-        display: flex;
-        gap: 20px;
-        .logo-img-contact {
-          width: 30%;
-          height: 200px;
-          background-image: url('/img/art-logo.png');
-          background-position: center;
-          background-size: contain;
-          background-repeat: no-repeat;
-          margin-bottom: 50px;
-        }
-        h4 {
-          font-family: $body-text-font-family;
-          font-size: 2em;
-          font-weight: 200;
-          color: $accent-color;
-        }
-      }
+      // .logo-contact {
+      //   display: flex;
+      //   gap: 20px;
+      //   .logo-img-contact {
+      //     width: 30%;
+      //     height: 200px;
+      //     background-image: url('/img/art-logo.png');
+      //     background-position: center;
+      //     background-size: contain;
+      //     background-repeat: no-repeat;
+      //     margin-bottom: 50px;
+      //   }
+      //   h4 {
+      //     font-family: $body-text-font-family;
+      //     font-size: 2em;
+      //     font-weight: 200;
+      //     color: $accent-color;
+      //   }
+      // }
     }
   }
   .right-contact-container {
     position: relative;
+    
     width: 50%;
     .contact-character-img {
       position: absolute;
       right: 0;
-      top: 20px;
-      width: 700px;
-      height: 700px;
+      top: 10rem;
+      opacity: 90%;
+      width: 30rem;
+      height: 30rem;
       background-image: url('/img/contact-character.webp');
       background-position: center;
       background-size: cover;
@@ -153,26 +173,40 @@
     }
   }
   .send-email {
-    box-shadow:  6px 6px 12px #ecdfdf,
-    -6px -6px 12px #f7f7f7;
-    z-index: 20;
-    text-decoration: none;
-    color: $primary-color;
-    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 1em;
+    width: 13rem;
+    margin: 20px 20px 20px 0px;
     padding: 15px;
-    border-radius: 10px;
-    font-family: $body-text-font-family;
-    background-color: #f679922f;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #7b3b3bba;
+    color: #ffffff;
+     transition:
+                background-color 0.3s ease-in-out,
+                color 0.3s ease-in-out;
+    border: 1px solid #fdfcfc60;
+
+    
+    border: 1px solid #fdfcfc60;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow: 0 8px 30px rgba(100, 70,    60, 0.2);
   }
   .send-email:hover {
-    opacity: 80%;
-            background-color: $accent-color;
-            box-shadow: inset 8px 8px 16px $accent-color,
-            inset -8px -8px 16px $accent-color-hover;
-            color: $secondary-color;
-            cursor: pointer;
-            backdrop-filter: blur(10px);
+    
+          color: rgb(254, 254, 254);
+          opacity: 60%;
+          background-color: #7b3b3bba;
+
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+
+          box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+          transform: translateY(-10px) rotate   (-1deg);
   }
 }
   
@@ -199,8 +233,6 @@
     height: 300px!important;
   }
 
-
-
 }
 
 
@@ -211,21 +243,18 @@
   }
 
   .contact-character-img {
-    top: 0!important;
     right: -3rem!important;
     width: 300px!important;
     height: 300px!important;
   }
   
   .social-container {
-    flex-direction: column;
     width: 100%;
   }
-  
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
   .right-contact-container {
     display: none;

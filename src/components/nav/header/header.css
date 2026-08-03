@@ -1,0 +1,155 @@
+/* Header component Start styling */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 10;
+  box-shadow: 5px 5px 40px rgba(245, 245, 245, 0.7176470588), -5px -5px 21px rgba(255, 255, 255, 0.7137254902);
+  z-index: 100;
+}
+nav .menu-icon {
+  display: none;
+  cursor: pointer;
+  top: 24px;
+  right: 35px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 25px;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+nav .menu-icon .bar {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+nav .menu-icon .bar1.toggle {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+nav .menu-icon .bar2.toggle {
+  opacity: 0;
+}
+nav .menu-icon .bar3.toggle {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+nav .logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .logo-container .logo-img-container {
+  width: 60px;
+  height: 60px;
+  background-image: url("/img/art-logo.png");
+  background-position: center;
+  background-size: cover;
+}
+nav .logo-container .name-nav-link {
+  color: #000000;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 2em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 0;
+  padding-left: 15px;
+}
+nav .logo-container .name-nav-link:hover {
+  background-color: rgba(236, 223, 223, 0.4901960784);
+  border-radius: 10px;
+  padding: 5px 15px;
+  box-shadow: inset 6px 6px 12px #ecdfdf, inset -6px -6px 12px #f7f7f7;
+  opacity: 50%;
+}
+nav .nav-links-container ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+nav .nav-links-container ul li {
+  align-items: center;
+}
+nav .nav-links-container ul li .nav-link {
+  color: #000000;
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border: 0;
+  padding: 5px 15px;
+}
+nav .nav-links-container ul li .nav-link:hover {
+  background-color: rgba(211, 217, 234, 0.4901960784);
+  border-radius: 10px;
+  padding: 5px 15px;
+  box-shadow: inset 6px 6px 12px #ecdfdf, inset -6px -6px 12px #f7f7f7;
+  opacity: 50%;
+}
+nav .nav-links-container ul li .logo-img-container {
+  display: none;
+  width: 10rem;
+  height: 10rem;
+  background-image: url("/img/art-logo.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+
+/* Header component styling End */
+@media (max-width: 800px) {
+  nav .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-200%);
+    overflow-y: auto;
+    gap: 0;
+    transition: transform 0.3s ease;
+  }
+  nav .nav-links-container ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav .nav-links-container ul li .nav-link {
+    color: #b92d3f;
+    font-family: "Nanum Brush Script", cursive;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: 0;
+    padding: 5px 15px;
+  }
+  nav .nav-links-container ul li .logo-img-container {
+    display: flex;
+  }
+  nav .menu-open-background {
+    padding: 20rem 0 10rem 0;
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(0);
+    background: rgba(255, 255, 255, 0.95);
+  }
+  nav .menu-icon {
+    position: fixed;
+  }
+  nav .menu-icon {
+    display: flex;
+    top: 2.2rem;
+    right: 1.5rem;
+  }
+}/*# sourceMappingURL=header.css.map */

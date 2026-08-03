@@ -27,9 +27,9 @@ const Header = () => {
       <div className='logo-container'>
         <div className='logo-img-container'/>
         <button 
-                className='name-nav-link' onClick={() => {handleNavigation('homeSection'); closeMenu();}}
+                className='name-nav-link nav-link' onClick={() => {handleNavigation('homeSection'); closeMenu();}}
             >
-              artcreatezart
+              Abbie's Portfolio
             </button>
       </div>
 
@@ -42,17 +42,20 @@ const Header = () => {
       <div className={`nav-links-container ${isOpen ? 'menu-open-background' : ''}`}>
         <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <li>
+             <div className='logo-img-container'></div>
+          </li>
+          <li>
             <button 
-                className='nav-link' onClick={() => {handleNavigation('projectSection'); closeMenu();}}
+                className='nav-link' onClick={() => {handleNavigation('homeSection'); closeMenu();}}
             >
-              Projects
+              Home
             </button>
           </li>
           <li>
             <button 
-                className='nav-link' onClick={() => {handleNavigation('skillSection'); closeMenu();}}
+                className="nav-link" onClick={() => { navigate("/more-projects"); closeMenu();}}
             >
-              Skills
+              Projects
             </button>
           </li>
           <li>

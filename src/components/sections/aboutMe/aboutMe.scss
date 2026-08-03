@@ -1,0 +1,130 @@
+#aboutMeSection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../../../../img/pattern-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    .about-me-container {
+        display: flex;
+        width:100%;
+        height: 70%;
+        justify-content: center;
+        gap: 5rem;
+        margin-top: 5rem;
+        .profile-photo {
+            background-image: url(../../../../img/profile-photo.webp);
+            width: 50%;
+            height: 90%;
+            padding-top: 20px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 20px #ffffff solid;
+            border-radius: 24px;
+             backdrop-filter: blur(14px);
+
+            box-shadow: 0 8px 30px rgba(100, 70, 60, 0.532);
+
+            transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+        }
+        .profile-photo:hover {
+            color: #ffffff;
+        }
+        .about-me-info {
+            width: 50%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+            .contact-button {
+                text-align: center;
+                font-size: 1em;
+                width: 13rem;
+                padding: 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                text-decoration: none;
+                background-color: #7b3b3bba;
+                color: #ffffff;
+                 transition:
+                            background-color 0.3s ease-in-out,
+                            color 0.3s ease-in-out;
+                border: 1px solid #fdfcfc60;
+                backdrop-filter: blur(14px);
+                -webkit-backdrop-filter: blur(14px);
+
+                box-shadow: 0 8px 30px rgba(100, 70,    60, 0.2);
+            } 
+             .contact-button:hover {
+                color: rgb(254, 254, 254);
+                opacity: 60%;
+                background-color: #7b3b3bba;
+            }
+            .info-me-cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                padding: 1rem 0rem;
+                .info-me-card {
+                    border-radius: 10px;
+                    background: rgba(255, 255, 255, 0.038);
+                    border: 1px solid #fdfcfc60;
+
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+
+                    box-shadow: 0 8px 30px rgba(100, 70,    60, 0.12);
+                    padding: 0.8rem;
+                    h3 {
+                        font-size: 1.2em;
+                        text-transform: uppercase;
+                        padding-bottom: 0.5rem;
+                    }
+                    p {
+                        font-size: 0.8em;
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #aboutMeSection {
+        width: 100%;
+        gap: 2rem;
+        height: 100%;
+        justify-content: start;
+        height: auto;
+        .about-me-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+        .profile-photo {
+            width: 100%;
+            height: 80rem;
+        }
+
+        .about-me-info {
+            width: 100%;
+            justify-content: start;
+        .info-me-cards {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+    }
+    }
+    }
+    
+    
+}

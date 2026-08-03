@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 // Page/Component imports
 import Home from '../pages/home/Home'
 import SingleProject from '../pages/singleProject/SingleProject'
+import MoreProjects from '../pages/moreProjects/MoreProjects'
 
 // Auto scroll top when on new page
 const ScrollPageTop = () => {
@@ -22,6 +23,8 @@ const Links = () => {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path='/project/:id' element={<SingleProject/>}></Route>
+        <Route path='/more-projects' element={<MoreProjects/>}></Route>
+
       </Routes>
     </>
     

@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use '../src/variables.scss' as *; 
 
 /* Google Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
@@ -9,6 +9,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 
 #rootContainer {
   min-height: 100dvh;
@@ -23,6 +24,9 @@ h1 {
 
 h3 {
   font-family: $subheader-font-family;
+  color: #000000bc;
+  letter-spacing: 0.2rem;
+  
 }
 
 p {
@@ -40,12 +44,7 @@ section {
 body {
   width: 100%;
   min-height: 100%;
-  background-image: url('/img/home-bg.webp');
   background-color: rgba(255, 255, 255, 0.7);
-  background-blend-mode: lighten;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; 
   margin: 0;
   padding: 0;
   overflow-x: hidden;

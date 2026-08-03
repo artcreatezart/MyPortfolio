@@ -1,0 +1,89 @@
+#topProjectSection {
+  max-width: 100vw;
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url("/img/pattern-background.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#topProjectSection .projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin: 0 auto 50px;
+  text-decoration: none;
+}
+#topProjectSection .projects-container .project-card {
+  position: relative;
+  padding: 14px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#topProjectSection .projects-container .project-card img {
+  max-width: 100%;
+  border-radius: 24px 24px 0 0;
+  height: 80%;
+}
+#topProjectSection .projects-container .project-card .project-card-content h2 {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  text-align: left;
+  color: black;
+}
+#topProjectSection .projects-container .project-card:hover {
+  transform: translateY(-10px) rotate -1deg;
+  box-shadow: 0 18px 40px rgba(123, 59, 59, 0.8078431373);
+}
+#topProjectSection .other-projects-button {
+  align-self: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  background: rgba(123, 59, 59, 0.7294117647);
+  color: #ffffff;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.12);
+}
+#topProjectSection .other-projects-button:hover {
+  opacity: 60%;
+  background-color: rgba(123, 59, 59, 0.7294117647);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  #topProjectSection {
+    min-height: 100vh;
+  }
+  #topProjectSection .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0 auto 50px;
+  }
+  #topProjectSection .other-projects-button {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 800px) {
+  #topProjectSection .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin: 0 auto 50px;
+  }
+}/*# sourceMappingURL=projects.css.map */

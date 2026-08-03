@@ -13,14 +13,7 @@ const Contact = () => {
         <h6>Based In Wellington </h6>
           <div className='sectioned-contact-container'>
             <div className='contact-form-container'>
-            <div className='contact-container'>
-              <MdOutlineEmail/>
-              <div className='email-container'>
-                <h5 className='contact-title'>Email:</h5>
-                <h5>artdesignswork@hotmail.com</h5>
-              </div>
-              
-            </div>
+            
             <ContactForm/>
             </div>
             
@@ -42,22 +35,22 @@ const Contact = () => {
                   <p className='social-defintion'>Github</p>
                   <h5>artcreatezart</h5>
                 </a>
-                <a className='social-contact-container'
+                {/* <a className='social-contact-container'
                 href='https://vercel.com/abbies-projects-93142625'
                 target='_blank'>
                   <IoLogoVercel/>
                   <p className='social-defintion'>Vercel (Live Websites)</p>
                   <h5>artcreatezart</h5>
-                </a>
+                </a> */}
                 
               </div>
 
             </div>
-            <div className='logo-contact'>
+            {/* <div className='logo-contact'>
               <div className='logo-img-contact'/>
 
             </div>
-            
+             */}
             
           </div>
         </div>

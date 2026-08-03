@@ -1,0 +1,214 @@
+#contactSection {
+  padding: 120px 0 0 70px;
+  background-image: url("/img/pattern-background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contactSection .left-contact-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+#contactSection .left-contact-container h6 {
+  font-family: "Arial";
+  font-size: 1.2em;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+#contactSection .left-contact-container .sectioned-contact-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 3em;
+  font-family: "Arial";
+  letter-spacing: 2px;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-container h5 {
+  font-size: 0.3em;
+  font-weight: 100;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-container .contact-title {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-social-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 4em;
+  font-family: "Arial";
+  letter-spacing: 2px;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-social-container h4 {
+  font-size: 0.5em;
+  font-family: "Nanum Brush Script", cursive;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-social-container .social-container {
+  display: flex;
+  gap: 2rem;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-social-container .social-container .social-contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  width: 10rem;
+  margin: 0px 20px 50px 0px;
+  gap: 0.5rem;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-social-container .social-container .social-contact-container h5 {
+  font-size: 0.25em;
+  font-weight: 100;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-social-container .social-container .social-contact-container .social-defintion {
+  font-size: 0.8rem;
+}
+#contactSection .left-contact-container .sectioned-contact-container .contact-social-container .social-container .social-contact-container:hover {
+  color: #ffffff;
+  background-color: rgba(123, 59, 59, 0.7294117647);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+  transform: translateY(-10px) rotate -1deg;
+}
+#contactSection .right-contact-container {
+  position: relative;
+  width: 50%;
+}
+#contactSection .right-contact-container .contact-character-img {
+  position: absolute;
+  right: 0;
+  top: 10rem;
+  opacity: 90%;
+  width: 30rem;
+  height: 30rem;
+  background-image: url("/img/contact-character.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+  gap: 1rem;
+}
+.contact-form .contact-form-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact-form .contact-form-sections label {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+.contact-form .contact-form-sections input, .contact-form .contact-form-sections textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Arial";
+  border: 1px solid rgba(236, 223, 223, 0.4901960784);
+  background-color: rgba(236, 223, 223, 0.4901960784);
+  border-radius: 10px;
+  padding: 5px 15px;
+  box-shadow: inset 6px 6px 12px #ecdfdf, inset -6px -6px 12px #f7f7f7;
+}
+.contact-form .send-email {
+  text-align: center;
+  font-size: 1em;
+  width: 13rem;
+  margin: 20px 20px 20px 0px;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: rgba(123, 59, 59, 0.7294117647);
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+}
+.contact-form .send-email:hover {
+  color: rgb(254, 254, 254);
+  opacity: 60%;
+  background-color: rgba(123, 59, 59, 0.7294117647);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+  transform: translateY(-10px) rotate -1deg;
+}
+
+@media (max-width: 1400px) {
+  #contactSection {
+    flex-direction: row !important;
+  }
+  .contact-character-img {
+    top: 0 !important;
+    width: 400px !important;
+    height: 400px !important;
+  }
+  .left-contact-container {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  .contact-character-img {
+    top: 0 !important;
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+@media (max-width: 900px) {
+  #contactSection {
+    padding: 3rem !important;
+  }
+  .contact-character-img {
+    right: -3rem !important;
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .social-container {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .right-contact-container {
+    display: none;
+  }
+  .left-contact-container {
+    width: 100% !important;
+  }
+  .logo-contact {
+    margin-top: 2rem;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=contact.css.map */

@@ -12,47 +12,47 @@ const hardSkills = [
     {
       id: 1,
       name: 'HTML',
-      image: <FaHtml5 />,
+      image: <FaHtml5  color="white"  size={50}/>,
     },
     {
       id: 2,
       name: 'SCSS',
-      image: <FaSass /> ,
+      image: <FaSass color="white"  size={50} /> ,
     },
     {
       id: 3,
       name: 'JavaScript',
-      image: <FaJs />,
+      image: <FaJs  color="white"  size={50}/>,
     },
     {
       id: 4,
       name: 'React',
-      image: <FaReact />,
+      image: <FaReact color="white"  size={50} />,
     },
     {
       id: 5,
       name: 'Figma',
-      image: <FaFigma/>,
+      image: <FaFigma color="white"  size={50}/>,
     },
     {
       id: 6,
       name: 'Photoshop',
-      image: <SiAdobephotoshop />,
+      image: <SiAdobephotoshop  color="white"  size={50}/>,
     },
     {
       id: 7,
       name: 'Illustrator',
-      image: <SiAdobeillustrator />,
+      image: <SiAdobeillustrator  color="white"  size={50}/>,
     },
     {
       id: 8,
       name: 'InDesign',
-      image: <SiAdobeindesign />,
+      image: <SiAdobeindesign color="white"  size={50} />,
     },
     {
       id: 9,
       name: 'GitHub',
-      image: <FaGithub/>,
+      image: <FaGithub color="white" size={50}/>,
     },
   ]
   
@@ -60,27 +60,27 @@ const softSkills = [
     {
       id: 1,
       name: 'Analysis',
-      image: <GrAnalytics />,
+      image: <GrAnalytics  color="white"  size={50}/>,
     },
     {
       id: 2,
       name: 'Team Work',
-      image: <RiTeamLine/>,
+      image: <RiTeamLine color="white"  size={50}/>,
     },
     {
       id: 3,
       name: 'Communication',
-      image: <FaTeamspeak/>,
+      image: <FaTeamspeak color="white"  size={50}/>,
     },
     {
       id: 4,
       name: 'Problem Solving',
-      image: <MdOutlineSyncProblem/>,
+      image: <MdOutlineSyncProblem color="white"  size={50}/>,
     },
     {
       id: 5,
       name: 'Creativity',
-      image: <MdOutlineCreate/>,
+      image: <MdOutlineCreate color="white"  size={50}/>,
     }
 ]  
 
@@ -93,7 +93,7 @@ const Skills = () => {
             {hardSkills.map((hardSkill) => (
             <div key={hardSkill.id} className="skills-card">
               {typeof hardSkill.image === 'string' ? (
-              <img src={hardSkill.image} alt={`${hardSkill.name} logo`} className='skills-card-img'/>
+              <img src={hardSkill.image} alt={`${hardSkill.name} logo`} />
             ) : (
               <div className='skills-card-img'>{hardSkill.image}</div>
             )}
@@ -108,9 +108,9 @@ const Skills = () => {
         {softSkills.map((softSkill) => (
             <div key={softSkill.id} className="skills-card">
               {typeof softSkill.image === 'string' ? (
-              <img src={softSkill.image} alt={`${softSkill.name} logo`} className='skills-card-img'/>
+              <img src={softSkill.image} alt={`${softSkill.name} logo` } className='skills-card-img'/>
             ) : (
-              <div className='skills-card-img'>{softSkill.image}</div>
+              <div className='skills-card-img' fill="#ffffff">{softSkill.image} </div>
             )}
               <h2 className='skills-card-name'>{softSkill.name}</h2>
               

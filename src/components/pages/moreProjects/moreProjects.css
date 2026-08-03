@@ -1,0 +1,191 @@
+#project-section {
+  background-image: url("/img/pattern-background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0 0 20px 0;
+  padding-top: 120px;
+  width: 100%;
+}
+.top-project-container .top-project-filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.top-project-container .top-project-filter-container .left-top-project-filter-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.top-project-container .top-project-filter-container .left-top-project-filter-container .bottom-project-filter-container {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  gap: 3rem;
+}
+.top-project-container .top-project-filter-container .left-top-project-filter-container .bottom-project-filter-container .select-filter-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.top-project-container .top-project-filter-container .left-top-project-filter-container .bottom-project-filter-container .select-filter-container label {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+.top-project-container .top-project-filter-container .left-top-project-filter-container .bottom-project-filter-container .select-filter-container select {
+  padding: 12px;
+  font-size: 1rem;
+  font-family: "Arial";
+  border: 1px solid rgba(236, 223, 223, 0.1411764706);
+  background-color: rgba(236, 223, 223, 0.4901960784);
+  border-radius: 10px;
+  box-shadow: inset 6px 6px 12px #ecdfdf, inset -6px -6px 12px #f7f7f7;
+}
+.top-project-container .top-project-filter-container .left-top-project-filter-container .bottom-project-filter-container .clear-button {
+  align-self: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+}
+.top-project-container .top-project-filter-container .left-top-project-filter-container .bottom-project-filter-container .clear-button:hover {
+  color: #ffffff;
+  background-color: rgba(123, 59, 59, 0.7294117647);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.2);
+  transform: translateY(-10px) rotate -1deg;
+}
+.top-project-container .top-project-filter-container .project-character-img {
+  width: 150px;
+  height: 150px;
+  background-image: url("/img/projects-character.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+#projectDisplay {
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  margin: 0 auto 50px;
+  text-decoration: none;
+}
+#projectDisplay .project-card {
+  position: relative;
+  padding: 14px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(253, 252, 252, 0.3764705882);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(100, 70, 60, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#projectDisplay .project-card .project-card-img {
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#projectDisplay .project-card .project-card-img-details {
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: ease 0.5s;
+  padding-top: 0.5rem;
+}
+#projectDisplay .project-card .project-card-img-details h2 {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  text-align: left;
+  color: black;
+}
+#projectDisplay .project-card:hover {
+  transform: translateY(-10px) rotate -1deg;
+  box-shadow: 0 18px 40px rgba(123, 59, 59, 0.8078431373);
+}
+
+@media (max-width: 900px) {
+  #projectDisplay {
+    padding: 0;
+  }
+  .top-project-filter-container {
+    position: relative;
+  }
+  .project-character-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .bottom-project-filter-container {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 2rem !important;
+  }
+  .project-card {
+    position: relative;
+  }
+  .project-card .project-card-img {
+    -o-object-position: 0%;
+       object-position: 0%;
+    background-color: #ffffff;
+    box-shadow: none !important;
+    scale: none;
+    transition: none !important;
+  }
+  /* Always visible, override hover styles */
+  .project-card .project-card-img-details {
+    display: flex !important;
+    cursor: auto;
+    transition: none !important;
+  }
+  /* Explicitly disable hover styles */
+  .project-card:hover .project-card-img {
+    -o-object-position: 0%;
+       object-position: 0%;
+    background-color: #ffffff;
+    box-shadow: none !important;
+    scale: none !important;
+    transition: none !important;
+  }
+  .project-card:hover .project-card-img-details {
+    display: flex !important;
+    scale: none !important;
+    transition: none !important;
+    cursor: auto;
+  }
+}
+@media (max-width: 400px) {
+  .project-character-img {
+    display: none;
+  }
+  #projectSection {
+    padding: 2.5rem !important;
+  }
+}/*# sourceMappingURL=moreProjects.css.map */

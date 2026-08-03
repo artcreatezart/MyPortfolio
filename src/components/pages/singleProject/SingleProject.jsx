@@ -1,7 +1,7 @@
 import React from 'react'
 import '../singleProject/singleProject.scss'
 import { useParams, useNavigate } from 'react-router-dom';
-import { portfolioProjects } from '../../sections/projects/Projects'
+import { portfolioProjects } from '../../pages/moreProjects/MoreProjects'
 import { ArrowLeft } from 'react-bootstrap-icons'
 import { FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
@@ -26,9 +26,9 @@ const SingleProject = () => {
   return (
     <section id='singleProjectSection'>
       <button 
-                className='arrow' onClick={() => handleNavigation('projectSection')}
+                className='back-button' onClick={() => { navigate("/more-projects");}}
             >
-              <ArrowLeft/> Go Back
+             ←  Go Back
             </button>
 
       <div className='single-project-container'>
@@ -54,7 +54,9 @@ const SingleProject = () => {
                 ) : null}
           <p className='description'>Main Hard Skills Used: {project.hardSkills}</p>
           <p className='description'>Soft Hard Skills Used: {project.softSkills}</p>
-          <h4 className='view-text'>View On Github and Vercel!</h4>
+          <div className='bottom-container'>
+            <div className='github-link-container'>
+              <h4 className='view-text'>View On Github and Vercel!</h4>
           <div className='project-icon-container'>
             <a className='project-icon'
                 href={project.github}
@@ -75,15 +77,19 @@ const SingleProject = () => {
                     <p>Backend</p>
                   </a>
                 ) : null}
-            <a className='project-icon'
+                <a className='project-icon'
                 href={project.vercel}
                 target='_blank'>
                   <IoLogoVercel/>
                   <p>Live Website</p>
                 </a>
+              </div>
+              <p>*This project was made for educational purposes only.</p>
+          
+            </div>
+              <div className='single-project-character-img-container'/>
           </div>
-          <p>*This project was made for educational purposes only.</p>
-          <div className='single-project-character-img-container'/>
+          
         </div>
         
       
