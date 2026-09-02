@@ -10,7 +10,7 @@ const TopProjects = () => {
   const navigate = useNavigate();
 
  const featuredProjects = portfolioProjects.filter(project =>
-  [1, 9, 4].includes(project.id)
+  [1, 11, 13].includes(project.id)
 );
   
 

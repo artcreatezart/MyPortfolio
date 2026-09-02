@@ -272,3 +272,11 @@
     margin-bottom: 2rem;
   }
 }
+
+@media (max-width: 400px) {
+
+  .social-container {
+    flex-direction: column;
+    gap: 0rem;
+  }
+}

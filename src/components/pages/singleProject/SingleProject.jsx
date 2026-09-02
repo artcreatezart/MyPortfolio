@@ -26,7 +26,8 @@ const SingleProject = () => {
     project.image3,
     project.image4,
     project.image5,
-    project.image6
+    project.image6,
+    project.image7
   ].filter(Boolean);
 
   const nextImage = () => {
