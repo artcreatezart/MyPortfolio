@@ -131,6 +131,11 @@
   box-shadow: 0 18px 40px rgba(123, 59, 59, 0.8078431373);
 }
 
+#projectDisplay:has(> :only-child) {
+  grid-template-columns: minmax(300px, 400px);
+  justify-content: start;
+}
+
 @media (max-width: 900px) {
   #projectDisplay {
     padding: 0;

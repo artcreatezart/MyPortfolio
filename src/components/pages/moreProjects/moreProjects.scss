@@ -112,6 +112,7 @@
   padding: 30px;
   display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
     gap: 4rem;
     margin: 0 auto 50px;
     text-decoration: none;
@@ -170,6 +171,11 @@
 
 
 
+}
+
+#projectDisplay:has(> :only-child) {
+     grid-template-columns: minmax(300px, 400px);
+    justify-content: start;
 }
 
 

@@ -54,10 +54,12 @@ const AboutMe = () => {
 
       </div>
       
+      
     
         
         
       </section>
+      
   )
 }
 
